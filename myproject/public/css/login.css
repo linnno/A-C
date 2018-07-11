@@ -1,0 +1,310 @@
+/* 重置所有 */
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  overflow: hidden;
+}
+/* ============================================================== */
+.login-page {
+  width: 364px;
+  height: 364px;
+  background-color: rgba(224, 222, 222, 0.4);
+  margin:0 auto;
+  border-radius: 10px; 
+}
+
+/* 背景图 */
+.backpic{
+  width: 100%;
+  height: 100%;
+  background:url(../img/bg.jpg) no-repeat;
+  background-size:cover;
+} 
+
+/* logo图 */
+.logo{
+  text-align: center;
+  padding: 30px;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background-image: url("img/bg.jpg");
+  max-width: 360px;
+  margin: -20px auto;
+  padding: 30px 45px 0;
+  text-align: center;
+}
+
+.inputs {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  outline: 0;
+  background: none;
+  width: 70%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1px 0 4px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+
+.form .message {
+  margin: 15px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+/* 输入框提醒的文字颜色 */
+input::-webkit-input-placeholder{
+  color:rgb(221, 217, 217);
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+  color:rgb(221, 217, 217);
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+  color:rgb(221, 217, 217);
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+  color:rgb(221, 217, 217);
+}
+
+/* =========================================================== */
+/* 信息输入框 */
+.one{
+  width: 100%;
+  height: 150px;
+}
+.one-one{
+  margin-top: 20px;
+}
+.one-1 span{
+  color: #ffffff;
+  font-size: 14px;
+  padding-top: 8px;
+}
+.length-yan{
+  size: 10px;
+}
+
+.two{
+  width: 100%;
+  height: 240px;
+}
+.two-two{
+  margin-top: 10px;
+}
+
+
+
+/* 注册/登录 */
+.three{
+  width: 100%;
+  height: 45px;
+  padding-top: 20px;
+}
+.btn-left{
+  width: 100px;
+  height: 36px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.btn-right{
+  width: 100px;
+  height: 36px;
+  background-color: #ffd000;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+/* .btn-right:hover{
+  background-color: #ffd000;
+}
+.btn-left:hover{
+  background-color: #ffd000;
+} */
+
+/* 验证图片 */
+.yanzheng{
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  outline: 0;
+  background: none;
+  width: 28%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1px 0 4px;
+  padding: 5px;
+  margin-left: 33px;
+  margin-right: 7px;
+  font-size: 14px;
+}
+.yanzheng1{
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  outline: 0;
+  background: none;
+  width: 28%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1px 0 4px;
+  padding: 5px;
+  margin-left: 30px;
+  margin-right: 35px;
+  font-size: 14px;
+}
+.yantu{
+  width: 30%;
+}
+
+/* 忘记密码 */
+.forget{
+  width: 100%;
+  height: 20px;
+}
+.forget a{
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.forget a:hover{
+  color: #ffd000;
+}
+.xieyi{
+  color: #ffffff;
+  text-decoration : none;
+  font-size: 12px;
+}
+.xieyi:hover{
+  color: #ffd000;
+}
+/* 第三方登录 */
+.other{
+  width: 100%;
+  height: 30px;
+}
+.line{
+  width: 25%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 11px;
+}
+.other span{
+  width: 50%;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* 第三方图标 */
+.sign{
+  width: 100%;
+  height: 60px;
+}
+
+/* 复选框 */
+.cbox{
+  width: 18px;
+}
+
+/*验证码*/
+
+.upload-awrp {
+  overflow: hidden;
+  margin: 120px 0;
+}
+#check-code{
+  display: inline-block;
+  height: 34px;
+  width: 33%;
+  background: url("../img/yanzhen.jpg") no-repeat;
+  background-position: center center;
+  margin-left: 0;
+}
+.code {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 25px;
+  border: 0;
+  padding: 2px 3px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+#yanzhenerr{
+  background: transparent;
+  height: 16px;
+}
+.yanzhen-btn{
+  width: 65px;
+  height: 28px;
+  background-color: #ffd000;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.yanzhen-time{
+  display: inline-block;
+  width: 65px;
+  height: 28px;
+  background-color: #ffd000;
+  font-size: 12px;
+  color: #fff;
+  line-height: 28px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+#box{
+  display: inline-block;
+}
+#register-err{
+  background: transparent;
+  height: 16px;
+}

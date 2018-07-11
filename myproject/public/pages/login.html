@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="backpic">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="../img/LOGO-white.png" alt="logo" >
+    </div>
+
+    <!-- 登录/注册 -->
+    <div class="login-page">
+      <div class="form">
+        <form id="register-form" class="register-form">
+
+          <!-- 注册 -->
+          <div class="two ">
+            <div class="clearfix">
+              <div class="one-1"><span class="fl">用户名 :</span></div>
+              <div><input type="text" name="registername" class="fr inputs" placeholder="用户名"></div>
+            </div>
+            <div class="two-two clearfix">
+              <div class="one-1"><span class="fl">密 码 :</span></div>
+              <div><input type="password" id="registerpass1" name="registerpass" class="fr inputs" placeholder="密码"></div>
+            </div>
+            <div class="two-two clearfix">
+              <div class="one-1"><span class="fl">确认密码 :</span></div>
+              <div><input type="password" id="registerpass2" class="fr inputs" placeholder="确认密码"></div>
+            </div>
+            <div class="two-two clearfix">
+              <div class="one-1"><span class="fl">手机号 :</span></div>
+              <div><input type="text" id="phone" name="phone" class="fr inputs" placeholder="手机号"></div>
+            </div>
+            <div class="two-two clearfix">
+              <div class="one-1"><span class="fl">验证码 :</span></div>
+              <div><input type="text" id="txtCode" name="txtCode" class="yanzheng1" placeholder="验证码"><div id="box"><button class="yanzhen-btn" id="btnCode" type="button">获取验证码</button></div></div>
+            </div>
+            <label><input type="checkbox" id="cbox" class="cbox" value="" size="6" /><a href="#" class="xieyi">我已同意《会员俱乐部协议》</a></label>
+          </div>
+<div id="register-err"></div>
+          <div class="three clearfix">
+            <button type="button" id="register-btn" class="btn-left">提 交</button>
+          </div>
+        </form>
+
+        <form id="login-form" class="login-form clearfix">
+          <!-- 登录 -->
+          <div class="one ">
+            <div class="clearfix">
+              <div class="one-1"><span class="fl">用户名 :</span></div>
+              <div><input type="text" name="loginname" class="fr inputs" placeholder="用户名/手机号"/></div>
+            </div>
+            <div class="one-one clearfix">
+              <div class="one-1"><span class="fl">密 码 :</span></div>
+              <div><input type="password" name="loginpass" class="fr inputs" placeholder="密码"/></div>
+            </div>
+            <div class="one-one clearfix">
+              <div class="one-1"><span class="fl">验证码 :</span></div>
+              <div><input type="text" id="yanzheng" class="yanzheng" placeholder="验证码"/>
+                <!--随机验证码-->
+                <div id="check-code" >
+                  <div class="code" id="data_code"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<div id="yanzhenerr"></div>
+          <div class="three clearfix">
+            <button type="button" id="login-register" class="btn-left fl">注 册</button> <button id="login-btn" type="button" class="btn-right fr">登 录</button>
+          </div>
+          <div class="forget clearfix">
+            <a class="fr xieyi">忘记密码？</a>
+          </div>
+          <div class="other">
+            <div class="line fl"></div><span>第三方登录</span><div class="line fr"></div>
+          </div>
+          <div class="sign">
+            <img src="../img/qq.png" alt="qq登录"> <img src="../img/sina.png" alt="新浪登录"> <img src="../img/wechat.png" alt="微信登录">
+          </div>
+          <!--  </div> -->
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- js部分 -->
+  <script src="../libs/jquery/jquery-1.11.1.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>
